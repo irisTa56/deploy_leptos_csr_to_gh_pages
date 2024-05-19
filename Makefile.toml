@@ -15,4 +15,4 @@ command = "cargo"
 args = ["test"]
 
 [tasks.check]
-dependencies = ["format", "lint", "test"]
+dependencies = ["format", "format-leptos", "lint", "test"]
