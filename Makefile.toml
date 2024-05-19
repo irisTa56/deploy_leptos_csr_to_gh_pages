@@ -1,0 +1,18 @@
+[tasks.format]
+command = "cargo"
+args = ["fmt"]
+
+[tasks.format-leptos]
+command = "leptosfmt"
+args = ["./**/*.rs"]
+
+[tasks.lint]
+command = "cargo"
+args = ["clippy"]
+
+[tasks.test]
+command = "cargo"
+args = ["test"]
+
+[tasks.check]
+dependencies = ["format", "lint", "test"]
